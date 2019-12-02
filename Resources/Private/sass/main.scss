@@ -1,0 +1,15 @@
+$variable: #F0F0F0;
+
+.someclass {
+  background-color: $variable;
+}
+
+div#news{
+	background-color: red;
+	ul{
+		font-size: 14pt;
+		li{
+			font-size: 12pt;		
+		}
+	}
+}
