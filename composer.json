@@ -1,0 +1,13 @@
+{
+    "name": "weissheiten/sassxample",
+    "description": "A short example using SASS, NPM and definition for a composer package",
+    "type": "library",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Florian Weiss",
+            "email": "github@weissheiten.at"
+        }
+    ],
+    "require": {}
+}
