@@ -9,5 +9,10 @@
             "email": "github@weissheiten.at"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Weissheiten\\Sassxample\\": "src/"
+        }
+    },
     "require": {}
 }
