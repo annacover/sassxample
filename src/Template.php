@@ -3,10 +3,22 @@
 namespace Weissheiten\Sassxample;
 
 class Template{
+    public function render($templatepath){
+        $homepage = file_get_contents($templatepath);
+        $arr = [];
+        $arr['username'] = "wsf";
+        $arr['userin'] = "bay";
+        $arr['lehrer'] = "ksp";
+        $arr['lehrerin'] = "osw";
+        $arr['schueler'] = "harald";
+        $arr['schuelerin'] = "tamaris";
 
-    public function render(){
-        $homepage = file_get_contents('./src/Templates/home.html');
-        $homepage = str_replace("###username###",'WSF',$homepage);
+        foreach ($arr as $key => $value){
+            try{
+                $homepage = str_replace("###{$key}###",$value,$homepage);
+            }catch (\Exception $e){}
+        }
+
         echo $homepage;
 
     }
